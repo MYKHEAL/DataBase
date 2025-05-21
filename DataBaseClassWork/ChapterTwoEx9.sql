@@ -1,0 +1,5 @@
+use cape_codd;
+select SKU,SKU_Description,QuantityOnHand,WarehouseID
+from inventory
+where QuantityOnHand = 0
+order by WarehouseID desc
